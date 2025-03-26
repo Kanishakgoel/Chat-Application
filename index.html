@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chat App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="user-info">
+                <div class="avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="user-name">Chat Room</div>
+            </div>
+            <div class="status">Online</div>
+        </div>
+        
+        <div class="chat-messages" id="chatMessages">
+            <!-- Messages will appear here -->
+            <div class="welcome-message">
+                <p>Welcome to the chat! Start sending messages below.</p>
+            </div>
+        </div>
+        
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Type your message here...">
+            <button id="sendButton"><i class="fas fa-paper-plane"></i></button>
+            <button id="emojiButton"><i class="far fa-smile"></i></button>
+        </div>
+    </div>
+
+    <div class="emoji-picker" id="emojiPicker">
+        <div class="emoji-category">Smileys</div>
+        <div class="emoji-container">
+            <span>😀</span><span>😃</span><span>😄</span><span>😁</span><span>😆</span>
+            <span>😅</span><span>😂</span><span>🤣</span><span>😊</span><span>😇</span>
+            <span>🙂</span><span>🙃</span><span>😉</span><span>😌</span><span>😍</span>
+            <span>😘</span><span>😗</span><span>😙</span><span>😚</span><span>😋</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
